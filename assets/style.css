@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    filter: brightness(1.2);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    padding-right: 30px;
+    background-color: rgb(3, 1, 116);
+    padding: 15px;
+}
+
+.opcoes1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.opcoes1 li {
+    display: block;
+    text-decoration: none;
+}
+
+.opcoes1 a {
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.opcoes1 a:hover {
+    transform: translateY(-3px);
+}
+
+.opcoes1 a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #7d68f1;
+    bottom: -5px;
+    left: 50%;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.opcoes1 a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.bi-person-circle,
+.bi-bootstrap {
+    font-size: 40px;
+    color: white;
+}
+
+svg.bi-person-circle {
+    fill: white;
+}
+
+.barra {
+    height: 4px;
+    width: 100%;
+    background-color: #7d68f1;
+}
+
+.video-banner {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.barra2 {
+    height: 300px;
+    width: 100%;
+}
+
+.meio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.meio img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.paragrafo {
+    max-width: 50%;
+    text-align: left;
+}
+
+.paragrafo h2 {
+    font-weight: bold;
+}
+
+.paragrafo h4 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.coluna {
+    flex: 1 1 30%;
+    max-width: 33%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+figure {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.foto-produto {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+
+figcaption h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.descricao {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .coluna {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.formulario {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #7d68f1;
+}
+
+button {
+    padding: 12px;
+    font-size: 1em;
+    background-color: #7d68f1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #5f46e2;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.mapa {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.mapa iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+.barra3{
+    height: 100px;
+    width: 100%;
+}
+/* O footer do site */
+.finalzinho{
+    display: flex;
+    justify-content: space-around !important;
+    background-color: rgb(3, 1, 116);
+    padding: 35px;
+}
+.finalzinho ul{
+    list-style: none;
+}
+.finalzinho a{
+    text-decoration: none !important;
+    font-size: medium;
+    font-weight: lighter;
+    color: whitesmoke;
+}
+.finalzinho h3{
+    color: white;
+    font-size: 30px; 
+}
